@@ -1,6 +1,8 @@
 # Ecommerce web application
 
-set up env variables as seen in ./config.js and run "npm install --legacy-peer-deps" 
+### Project Setup
+
+Set up env variables as seen in ./config.js and run "npm install --legacy-peer-deps" 
 
 ## Available Scripts
 
