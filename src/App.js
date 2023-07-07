@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
 import Home from './onepirate/Home'
 import GetProductsUnderCategory from './components/getProductsUnderCategory';
@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/category' element={<GetProductsUnderCategory />}/>
@@ -22,9 +21,7 @@ function App() {
           <Route path='/signIn' element={<SignIn />}/>
           <Route path='/signUp' element={<SignUp/>}/>
           <Route path='/cart' element={<Cart/>}/>
-          
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }

@@ -101,7 +101,7 @@ const ResponsiveAppBar = () => {
   return (
     <StyledEngineProvider injectFirst>
       <AppBar position="fixed">
-        <Container maxWidth="xl" sx={{bgcolor: '#040a24'}}>
+        <Container maxWidth="100vw" sx={{bgcolor: '#040a24'}}>
           <Toolbar disableGutters >
             <Link to='/' style={{ padding: '6px 0px' }}>
               <Typography
@@ -230,7 +230,7 @@ const ResponsiveAppBar = () => {
 
             <Box sx={{ display: 'flex', flexGrow: 0 }}>
               <Link to='/cart' style={{ paddingTop: '6px', marginRight: '8px' }}>
-                <Badge badgeContent={noOfCartItem} color="primary" >
+                <Badge badgeContent={noOfCartItem} color="primary" data-testid="noOfItems" >
                   <ShoppingCartOutlinedIcon style={{ color: 'white' }} />
                 </Badge>
               </Link>

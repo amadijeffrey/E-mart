@@ -46,7 +46,7 @@ function ProductValues() {
             </ScrollAnimation>
           </Grid>
           <Grid item xs={12} md={6}>
-            <ScrollAnimation animateIn="animate__slideInRight" animateOnce='true'>
+            <ScrollAnimation animateIn="animate__slideInRight" animateOnce={true}>
             <Box sx={item}>
               <MoneyOffIcon  style={{fontSize: '40px'}} />
               <Typography variant="h6" sx={{ my: 5 }}>

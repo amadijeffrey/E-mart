@@ -17,8 +17,8 @@ function AppForm(props) {
         backgroundSize: 'cover',
         backgroundPosition:'center',
         backgroundAttachment: 'fixed',
-        mt: 8,
-        height: '100%'
+        pt: 14,
+        height: '100vh'
       }}
     >
       <Container maxWidth="sm">

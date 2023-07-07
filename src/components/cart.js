@@ -103,7 +103,6 @@ const Cart = () => {
     return (
         <div>
             <ResponsiveAppBar />
-
             <Box sx={{ marginTop: '72px', background: '#f5f5f5', pb: 2 }}>
                 <Container sx={{ paddingTop: '10px' }}>
                     <Typography sx={{ padding: '10px', }}>
@@ -111,7 +110,6 @@ const Cart = () => {
                     </Typography>
                     <Grid container spacing={2} sx={{ dispaly: 'flex' }}>
                         <Grid item sm={12} md={9} >
-
                             {
                                 _.map(cart, (cartItem) => {
                                     return <CartItem key={cartItem.name} cartDetail={cartItem}
@@ -119,7 +117,6 @@ const Cart = () => {
                                         deleteItem={deleteItem} updateItem={updateItem} />
                                 })
                             }
-
                         </Grid>
                         <Grid item xs={12} md={3} sx={{ padding: '4px', marginTop: '10px', order: { xs: '-1', md: '0' }, }} >
                             <Box >
@@ -128,7 +125,7 @@ const Cart = () => {
                                 </Typography>
                                 <Typography variant="h6" sx={{ padding: '8px', bgcolor: 'white', border: '1px solid #f5f5f5' }}>
                                     Subtotal
-                                    <span style={{ float: 'right' }}>
+                                    <span style={{ float: 'right' }} data-testid='subtotal'>
                                         {convertToValidPrice(subtotal)}
                                     </span>
                                 </Typography>

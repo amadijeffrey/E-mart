@@ -6,7 +6,7 @@ import CardActionArea from '@mui/material/CardActionArea'
 import Card from '@mui/material/Card'
 import Container from '@mui/material/Container';
 import {Link} from 'react-router-dom'
-import Typography from '../components/Typography';
+import Typography from '@mui/material/Typography';
 import fetchFeaturedProducts from '../../../actions/action_fetchFeaturedProducts';
 import _ from 'lodash'
 import { convertToValidPrice } from '../../../components/getProductsUnderCategory';

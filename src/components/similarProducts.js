@@ -11,7 +11,6 @@ import { convertToValidPrice } from './getProductsUnderCategory';
 
 const SimilarProducts = (props) => {
   if(!props.products) return
-  console.log(props.products)
     return (
         <Box>
             <Typography variant="h6" sx={{ mt: 3,mb:0.5, padding: '8px', bgcolor: 'white', paddingLeft: '15px'}}>
