@@ -102,7 +102,7 @@ const GetProductsUnderCategory = () => {
       <>
          <ResponsiveAppBar />
          <Box sx={{ background: '#f5f5f5', marginTop: {md:'76px',sm: '70px', xs:'14%'}, padding: '10px' }} >
-            <Link to='/'><span>Home</span></Link> {'> '} <span>{decodedCategory}</span>
+            <Link to='/'><span>Home</span></Link> {'> '} <span style={{fontFamily: 'varela round'}}>{decodedCategory}</span>
             <Container sx={{ paddingTop: '20px' }}>
                <Grid container spacing={1.5} sx={{display: 'flex'}}>
                   <Grid item xs={12} sm={3} md={3} sx={{order: {xs: 2,sm:0,md:0}}}>

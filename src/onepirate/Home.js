@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React from 'react';
 import ProductCategories from './modules/views/ProductCategories';
 import ProductHero from './modules/views/ProductHero';
 import ProductValues from './modules/views/ProductValues';
@@ -11,7 +11,7 @@ import Footer from '../components/footer';
 
 function Index() {
   return (
-    <React.Fragment>
+    <div  data-testid='container'>
       <ResponsiveAppBar />
       <ProductHero />
       <ProductValues />
@@ -19,8 +19,9 @@ function Index() {
       <ProductHowItWorks />
       <ProductCTA />
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 
-export default withRoot(Index);
+ const Home = withRoot(Index);
+ export default Home

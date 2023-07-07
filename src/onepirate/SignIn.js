@@ -41,7 +41,7 @@ function SignIn() {
   return (
     <React.Fragment>
       <ResponsiveAppBar />
-      <AppForm>
+      <AppForm >
         <React.Fragment>
           <Typography variant="h3" gutterBottom marked="center" align="center">
             Sign In

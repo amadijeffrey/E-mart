@@ -1,11 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux'
 import App from './App';
 import { store, persistor } from './store'
 import { PersistGate } from 'redux-persist/integration/react';
 import { transitions, positions, Provider as AlertProvider } from 'react-alert'
 import AlertTemplate from 'react-alert-template-basic'
+import { BrowserRouter } from 'react-router-dom';
 
 
 const options = {
@@ -18,15 +19,17 @@ const options = {
 }
 
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <AlertProvider template={AlertTemplate} {...options}>
-        <App />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </AlertProvider>
     </PersistGate>
-  </Provider>,
-  document.getElementById('root')
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
